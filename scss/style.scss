@@ -1,0 +1,37 @@
+//@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+// cores
+
+$silver : #bdc3c7;
+
+body{
+    
+   background: url('https://visualhunt.com/photos/xl/3/rock-musicians-in-darkness.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+
+@media all and(max-width: 800px){
+    
+} 
+
+
+
+// bootstrap
+
+.navbar-default{
+    background-color: transparent;
+    border: none;
+}
+
+
+// text
+
+.color-title{
+    color: $silver;
+}
+    
+    
