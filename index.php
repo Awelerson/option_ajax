@@ -63,9 +63,9 @@
                   <div class="col-md-6 col-md-offset-3">
                     <form action="">
                     
-                     <div class="form-inline">
+                     <div class="row">
                          
-                         <div class="form-group">
+                         <div class="form-group col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
                              <label for="Banda">Banda:</label>
                              <select name="" id="" class="form-control">
                                  <option value="">Yui</option>
@@ -80,7 +80,7 @@
                                  </option>
                              </select>
                          </div>
-                         <div class="form-group">
+                         <div class="form-group col-md-4  col-sm-4 col-xs-8 col-xs-offset-2">
                              <label for="Musicas">Musicas</label>
                              <select name="" id="" class="form-control">
                                  <option value="">musica1</option>
