@@ -8,10 +8,13 @@
      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
     
-    
+   
 </head>
 <body>
-    
+       
+       <div class="casa">
+           aaaaa
+       </div>
        
             <!-- menu -->        
                                   
@@ -58,38 +61,36 @@
                   
               </div>
               
-              <div class="row">
+              <article class="row">
                   
-                  <div class="col-md-6 col-md-offset-3">
+                  <div class="col-md-6 col-md-offset-2">
                     <form action="">
                     
-                     <div class="row">
+                     <div class="row color-text">
                          
-                         <div class="form-group col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
-                             <label for="Banda">Banda:</label>
-                             <select name="" id="" class="form-control">
-                                 <option value="">Yui</option>
-                                 <option value="">
+                         <div class="form-group col-md-3 col-md-offset-3 col-sm-5 col-xs-6 col-xs-offset-3">
+                             <label for="Banda" >Banda:</label>
+                             <select name="" id="banda" class="form-control">
+                                <option value=""></option>
+                                 <option value="yui">Yui</option>
+                                 <option  value="one ok rock">
                                      One Ok Rock
                                  </option>
-                                 <option value="">
+                                 <option value="scandal">
                                      Scandal
                                  </option>
-                                 <option value="">
+                                <label for="">
+                                 <option value="miwa">
                                      Miwa
                                  </option>
                              </select>
+                            
+                               
+                             
                          </div>
-                         <div class="form-group col-md-4  col-sm-4 col-xs-8 col-xs-offset-2">
+                         <div class="form-group col-md-3   col-sm-5 col-xs-6 col-xs-offset-3">
                              <label for="Musicas">Musicas</label>
-                             <select name="" id="" class="form-control">
-                                 <option value="">musica1</option>
-                                 <option value="">musica2</option>
-                                 <option value="">musica3</option>
-                                 <option value="">musica4</option>
-                                 <option value="">musica5</option>
-                                 <option value="">musica6</option>
-                                 <option value="">musica7</option>
+                             <select name="" id="form-music" class="form-control">
                              </select>
                              
                          </div>
@@ -100,17 +101,36 @@
                       
                   </div>
                   
-              </div>
+                  
+                  <div class="container">
+                      
+                      <div class="row">
+                         <div class="col-md-6 col-md-offset-3">
+                          <div class="embed-responsive embed-responsive-16by9 ">
+                              <iframe  src="https://www.youtube.com/embed/h9WWfh_WZ6M" frameborder="0" class="embed-responsive-item" ></iframe>
+                          </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  
+              </article>
        
  
     
     
-    
+ 
     
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
 
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <script src= "js/ajax.js"></script>  
+     
+     
+     
+         
 </body>
 </html>

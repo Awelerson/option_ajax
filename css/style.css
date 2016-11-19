@@ -4,11 +4,17 @@ body {
   background-size: 100% 100%;
   background-attachment: fixed; }
 
+article {
+  margin-top: 4%; }
+
 .navbar-default {
   background-color: transparent;
   border: none; }
 
 .color-title {
   color: #bdc3c7; }
+
+.color-text {
+  color: #CFD8DC; }
 
 /*# sourceMappingURL=style.css.map */
