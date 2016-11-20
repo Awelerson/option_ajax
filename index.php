@@ -12,11 +12,7 @@
 </head>
 <body>
        
-       <div class="casa">
-           aaaaa
-       </div>
-       
-            <!-- menu -->        
+                  <!-- menu -->        
                                   
             <nav class="navbar navbar-default">
                 
@@ -129,7 +125,7 @@
 
      <script src= "js/ajax.js"></script>  
      
-     
+    
      
          
 </body>
