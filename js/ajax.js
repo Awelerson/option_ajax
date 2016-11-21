@@ -1,5 +1,7 @@
   
 
+//  mudar options das musicas de acordo com o cantor/banda
+
 $(document).ready(function(){
     
     
@@ -18,9 +20,10 @@ $(document).ready(function(){
             
     }
 	}).done(function(resposta) {
-           for(var i=0;resposta.length>i;i++){
+        $('#form-music').append('<option></option>')   
+        for(var i=0;resposta.length>i;i++){
 				//Adicionando registros retornados na tabela
-              
+                
 				$('#form-music').append('<option value="'+ resposta[i].link +'">'+resposta[i].nome_musica+'</option>');
 			}
        
@@ -33,13 +36,18 @@ $(document).ready(function(){
 });
     
 });    
-   
+       
     
-    
-    
-    
+});
 
-    
-    
+
+// mudar video a partir do src
+
+$(document).ready(function(){
+   $("#form-music").change(function(){
+      var musica = $("#form-music").val();
+    var video = $(".embed-responsive-item").attr('src',musica);
+    console.log(video);
+   }); 
 });
   

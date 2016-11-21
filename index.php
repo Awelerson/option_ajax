@@ -57,14 +57,15 @@
                   
               </div>
               
-              <article class="row">
+              <article class="row color-text">
                   
-                  <div class="col-md-6 col-md-offset-2">
+                  <div class="col-md-6 col-md-offset-3 opt">
                     <form action="">
                     
-                     <div class="row color-text">
-                         
-                         <div class="form-group col-md-3 col-md-offset-3 col-sm-5 col-xs-6 col-xs-offset-3">
+                        <div class="row">
+                   
+                         <div class="col-md-5 col-md-offset-1">
+                       
                              <label for="Banda" >Banda:</label>
                              <select name="" id="banda" class="form-control">
                                 <option value=""></option>
@@ -72,26 +73,25 @@
                                  <option  value="one ok rock">
                                      One Ok Rock
                                  </option>
-                                 <option value="scandal">
-                                     Scandal
+                                 <option value="evanescence">
+                                     Evenesccence
                                  </option>
-                                <label for="">
-                                 <option value="miwa">
-                                     Miwa
-                                 </option>
-                             </select>
+                            </select>
                             
-                               
+                           </div>    
                              
-                         </div>
-                         <div class="form-group col-md-3   col-sm-5 col-xs-6 col-xs-offset-3">
+                        
+                             <div class="col-md-5">
+                            
                              <label for="Musicas">Musicas</label>
                              <select name="" id="form-music" class="form-control">
                              </select>
                              
-                         </div>
+                             </div>
+                             
+                       </div>
                          
-                     </div>
+                     
                        
                     </form>
                       

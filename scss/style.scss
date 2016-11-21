@@ -16,7 +16,11 @@ body{
 
 article{
     margin-top: 4%; 
+    .opt{
+        margin-bottom: 2em;
+    }
 }
+
 
 @media all and(max-width: 800px){
     

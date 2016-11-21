@@ -6,6 +6,8 @@ body {
 
 article {
   margin-top: 4%; }
+  article .opt {
+    margin-bottom: 2em; }
 
 .navbar-default {
   background-color: transparent;
