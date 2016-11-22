@@ -1,3 +1,7 @@
+<?php
+require_once("classes/consulta_bandas.php");
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,8 +38,8 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                     
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">link git</a></li>
-                        <li><a href="#">codepen</a></li>
+                        <li><a href="https://github.com/AllanWelerson/option_ajax" target="_blank">Github</a></li>
+                        <li><a href="http://codepen.io/allanwelerson/" target="_blank">codepen</a></li>
                         
                     </ul>
                     
@@ -49,7 +53,7 @@
              
               <!-- Conteudo --> 
               
-              <div class="row color-title">
+              <div class="row color title">
                   
                   <div class="col-md-6 col-md-offset-3 text-center ">
                       <h1>Aqui você esculta suas musicas favoritas!</h1>
@@ -57,31 +61,41 @@
                   
               </div>
               
+              
+              
               <article class="row color-text">
                   
-                  <div class="col-md-6 col-md-offset-3 opt">
+                  <div class="col-md-6 col-md-offset-3 -1 opt">
                     <form action="">
                     
                         <div class="row">
                    
-                         <div class="col-md-5 col-md-offset-1">
+                         <div class="col-md-5 col-md-offset-1 col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-5">
                        
                              <label for="Banda" >Banda:</label>
                              <select name="" id="banda" class="form-control">
                                 <option value=""></option>
-                                 <option value="yui">Yui</option>
-                                 <option  value="one ok rock">
-                                     One Ok Rock
-                                 </option>
-                                 <option value="evanescence">
-                                     Evenesccence
-                                 </option>
+                                
+                                
+                                <!-- Setando nomes das bandas e cantores nos campos de opções -->
+                                 <?php
+                                 
+                                 $bandas = new consultaBandas();
+                                 $b = $bandas->busca();
+                             
+                                 
+                                 foreach($b as $banda){
+                                     echo "<option value='". $banda["nome"] ."'>" . $banda["nome"] . "</option>";
+                                 }
+                                 
+                                 ?>
+                               
                             </select>
                             
                            </div>    
                              
                         
-                             <div class="col-md-5">
+                             <div class="col-md-5 col-sm-4  col-xs-5">
                             
                              <label for="Musicas">Musicas</label>
                              <select name="" id="form-music" class="form-control">
@@ -98,12 +112,19 @@
                   </div>
                   
                   
+                  <!-- Conteiner com o video do youtube -->
+                  
                   <div class="container">
                       
                       <div class="row">
-                         <div class="col-md-6 col-md-offset-3">
+                         <div class="col-md-8 col-md-offset-2">
+                         <div class="panel video">
+                         
+                         <div class="panel-body">
                           <div class="embed-responsive embed-responsive-16by9 ">
                               <iframe  src="https://www.youtube.com/embed/h9WWfh_WZ6M" frameborder="0" class="embed-responsive-item" ></iframe>
+                          </div>
+                          </div>
                           </div>
                           </div>
                       </div>
@@ -111,6 +132,20 @@
                   </div>
                   
               </article>
+              
+              <!-- Footer  -->
+              
+              <footer>
+                  
+                  <p class="text-center">
+                      
+                      <span>By</spanspan><a href="https://github.com/AllanWelerson" target="_blank"> Allan Welerson</a>
+                      
+                  </p>
+                  
+                  
+                  
+              </footer>
        
  
     

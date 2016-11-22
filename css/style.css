@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans");
 body {
   background: url("https://visualhunt.com/photos/xl/3/rock-musicians-in-darkness.jpg");
   background-repeat: no-repeat;
@@ -9,14 +11,27 @@ article {
   article .opt {
     margin-bottom: 2em; }
 
+#myNavbar > ul > li a:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2); }
+
+.panel.video {
+  background: rgba(0, 0, 0, 0.2); }
+
 .navbar-default {
   background-color: transparent;
   border: none; }
 
-.color-title {
+.color.title {
   color: #bdc3c7; }
+
+.title {
+  font-family: 'Nunito', sans-serif; }
 
 .color-text {
   color: #CFD8DC; }
+
+footer {
+  font-family: 'Open Sans', 'sans-serif'; }
 
 /*# sourceMappingURL=style.css.map */
