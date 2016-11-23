@@ -8,20 +8,16 @@ $bluegray : #CFD8DC;
 $background: rgba(0,0,0,0.2);
 
 
+
+
+
 body{
-    
-   background: url('https://visualhunt.com/photos/xl/3/rock-musicians-in-darkness.jpg'); 
+    background: url('https://visualhunt.com/photos/xl/3/rock-musicians-in-darkness.jpg'); 
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
-article{
-    margin-top: 4%; 
-    .opt{
-        margin-bottom: 2em;
-    }
-}
 
 #myNavbar > ul > li{
        
@@ -33,11 +29,22 @@ article{
     }
 
 
+article{
+    margin-top: 4%; 
+    .opt{
+        margin-bottom: 2em;
+    }    
+}
+
+
+
+
 
 
 .panel.video{
       background: $background;
 }
+
 
 
 

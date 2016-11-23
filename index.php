@@ -5,7 +5,10 @@ require_once("classes/consulta_bandas.php");
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Musicas</title>
     
     <!-- Latest compiled and minified CSS -->
@@ -23,13 +26,13 @@ require_once("classes/consulta_bandas.php");
                 <div class="container-fluid">
                     <div class="navbar-header">
                        
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                          
-                           <a class="navbar-brand" href="#" class="navbar-brand">J-music Select</a>
+                        <a class="navbar-brand" href="#" class="navbar-brand">J-music Select</a>
                     
                    
                     
@@ -37,11 +40,12 @@ require_once("classes/consulta_bandas.php");
                     
                     <div class="collapse navbar-collapse" id="myNavbar">
                     
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://github.com/AllanWelerson/option_ajax" target="_blank">Github</a></li>
-                        <li><a href="http://codepen.io/allanwelerson/" target="_blank">codepen</a></li>
-                        
-                    </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                            <li><a href="https://github.com/AllanWelerson/option_ajax" target="_blank">Github</a></li>
+                            <li><a href="http://codepen.io/allanwelerson/" target="_blank">codepen</a></li>
+
+                        </ul>
                     
                     </div>
                     
@@ -77,7 +81,7 @@ require_once("classes/consulta_bandas.php");
                                 <option value=""></option>
                                 
                                 
-                                <!-- Setando nomes das bandas e cantores nos campos de opções -->
+                                <!-- Nomes das bandas e cantores nos campos de opções -->
                                  <?php
                                  
                                  $bandas = new consultaBandas();
@@ -92,16 +96,15 @@ require_once("classes/consulta_bandas.php");
                                
                             </select>
                             
-                           </div>    
+                            </div>    
                              
                         
-                             <div class="col-md-5 col-sm-4  col-xs-5">
+                            <div class="col-md-5 col-sm-4  col-xs-5">
                             
-                             <label for="Musicas">Musicas</label>
-                             <select name="" id="form-music" class="form-control">
-                             </select>
+                                 <label for="Musicas">Musicas</label>
+                                 <select name="" id="form-music" class="form-control"></select>
                              
-                             </div>
+                            </div>
                              
                        </div>
                          
@@ -118,14 +121,14 @@ require_once("classes/consulta_bandas.php");
                       
                       <div class="row">
                          <div class="col-md-8 col-md-offset-2">
-                         <div class="panel video">
-                         
-                         <div class="panel-body">
-                          <div class="embed-responsive embed-responsive-16by9 ">
-                              <iframe  src="https://www.youtube.com/embed/h9WWfh_WZ6M" frameborder="0" class="embed-responsive-item" ></iframe>
-                          </div>
-                          </div>
-                          </div>
+                             <div class="panel video">
+
+                                <div class="panel-body">
+                                      <div class="embed-responsive embed-responsive-16by9 ">
+                                          <iframe  src="https://www.youtube.com/embed/h9WWfh_WZ6M" frameborder="0" class="embed-responsive-item" ></iframe>
+                                      </div>
+                                </div>
+                              </div>
                           </div>
                       </div>
                       
@@ -158,7 +161,7 @@ require_once("classes/consulta_bandas.php");
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-     <script src= "js/ajax.js"></script>  
+<script src= "js/ajax.js"></script>  
      
     
      

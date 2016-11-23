@@ -1,35 +1,33 @@
   
 
-//  mudar options das musicas de acordo com o cantor/banda
+//  Muda os "options" do select de acordo com o cantor ou banda selecionada, mostrando apenas musicas apropriadas   
 
 $(document).ready(function(){
-    
-    
        
     $("#banda").change(function(){
-   var banda = $("#banda").val();
-   var url = "classes/consulta.php?cantor="+ banda;    
+   var banda = $("#banda").val(); // pega nome da banda ou cantor
+   var url = "classes/consulta_musicas.php?cantor="+ banda; // cria url para pagina php   
        
-    $('#form-music option').empty(); //Limpando a tabela
-	$('#form-music option').addClass("hidden");
+  	$('#form-music option').addClass("hidden"); // apaga musicas antigas no select
     $.ajax({
-		type:"POST",		//Definimos o método HTTP usado
-		dataType: "json",	//Definimos o tipo de retorno
-		url: url,//Definindo o arquivo onde serão buscados os dados
+		type:"POST",		// Método HTTP usado
+		dataType: "json",	// Retorno
+		url: url, // Arquivo onde é feita a busca de dados
 		success: function(dados){
             
     }
 	}).done(function(resposta) {
         $('#form-music').append('<option></option>')   
         for(var i=0;resposta.length>i;i++){
-				//Adicionando registros retornados na tabela
+				
+            //Adicionando registros retornados na tabela
                 
 				$('#form-music').append('<option value="'+ resposta[i].link +'">'+resposta[i].nome_musica+'</option>');
 			}
        
 
 }).fail(function(jqXHR, textStatus ) {
-    console.log("Request failed: " + textStatus);
+    console.log("Request failed: " + textStatus); // caso ocorra algum erro
 
 }).always(function() {
     console.log("completou");
@@ -40,8 +38,14 @@ $(document).ready(function(){
     
 });
 
+//// FIM 
 
-// mudar video a partir do src
+
+
+// =>
+// muda video a partir do src no iframe 
+//
+
 
 $(document).ready(function(){
    $("#form-music").change(function(){
