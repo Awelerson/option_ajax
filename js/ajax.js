@@ -10,7 +10,7 @@ $(document).ready(function(){
        
   	$('#form-music option').addClass("hidden"); // apaga musicas antigas no select
     $.ajax({
-		type:"POST",		// Método HTTP usado
+		type:"GET",		// Método HTTP usado
 		dataType: "json",	// Retorno
 		url: url, // Arquivo onde é feita a busca de dados
 		success: function(dados){
