@@ -13,7 +13,7 @@ require_once("classes/consulta_bandas.php");
     
     <!-- Latest compiled and minified CSS -->
      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     
    
 </head>
@@ -161,7 +161,7 @@ require_once("classes/consulta_bandas.php");
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src= "js/ajax.js"></script>  
+<script src= "js/ajax.min.js"></script>  
      
     
      
