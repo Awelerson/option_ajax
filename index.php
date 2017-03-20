@@ -160,7 +160,7 @@ require_once("classes/consulta_bandas.php");
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<!-- Arquivo js-->
 <script src= "js/ajax.min.js"></script>  
      
     
