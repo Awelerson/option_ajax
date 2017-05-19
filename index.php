@@ -32,7 +32,7 @@ require_once("classes/consulta_bandas.php");
                             <span class="icon-bar"></span>
                         </button>
                          
-                        <a class="navbar-brand" href="#" class="navbar-brand">J-music Select</a>
+                        <a class="navbar-brand" href="index.php" class="navbar-brand">J-music Select</a>
                     
                    
                     
